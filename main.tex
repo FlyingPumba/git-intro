@@ -58,7 +58,7 @@
     \pause
     \begin{figure}[ht]
         \begin{center}
-            \includegraphics[height=1.5in]{horror.png}
+            \includegraphics[height=1.5in]{images/horror.png}
         \end{center}
     \end{figure}
 
@@ -79,7 +79,7 @@
     \pause
     \begin{figure}[ht]
         \begin{center}
-            \includegraphics[height=1.5in]{horror.png}
+            \includegraphics[height=1.5in]{images/horror.png}
         \end{center}
     \end{figure}
 
@@ -163,7 +163,7 @@
 
     \begin{figure}[ht]
         \begin{center}
-            \includegraphics[height=1.5in]{svn-data.png}
+            \includegraphics[height=1.5in]{images/data.png}
         \end{center}
     \end{figure}
 
@@ -183,7 +183,7 @@
 
     \begin{figure}[ht]
         \begin{center}
-            \includegraphics[height=1.5in]{git-data.png}
+            \includegraphics[height=1.5in]{images/data.png}
         \end{center}
     \end{figure}
 
@@ -255,7 +255,7 @@
 
     \begin{figure}[ht]
         \begin{center}
-            \includegraphics[height=1in]{files-lifecycle.png}
+            \includegraphics[height=1in]{images/lifecycle.png}
         \end{center}
     \end{figure}
 
@@ -361,8 +361,8 @@ origin  git@github.com:FlyingPumba/git-intro.git (push)
 \end{frame}
 
 \begin{frame}{Ramificaciones en Git}
-    
-    Cada vez que realizamos una confirmación (commit), Git almacena entre otras cosas uno o varios punteros a las confirmaciones que 
+
+    Cada vez que realizamos una confirmación (commit), Git almacena entre otras cosas uno o varios punteros a las confirmaciones que
     sean padres directos de esta.
 
     Una rama o branch en Git no es más que un puntero especial parado en un commit. Ejecutar \texttt{git branch} nos mostrará las ramas actuales. Veamos un ejemplo sencillo:
@@ -371,14 +371,14 @@ origin  git@github.com:FlyingPumba/git-intro.git (push)
         \column{0.5\textwidth}
         \begin{figure}[ht]
             \begin{center}
-                \includegraphics[height=1.1in]{branch-and-history.png}
+                \includegraphics[height=1.1in]{images/history.png}
             \end{center}
             \caption{La rama ``master'' apunta al commit \textit{f30ab}}
         \end{figure}
         \column{0.5\textwidth}
         \begin{figure}[ht]
             \begin{center}
-                \includegraphics[height=1.1in]{head-to-master.png}
+                \includegraphics[height=1.1in]{images/master.png}
             \end{center}
             \caption{Creamos una nueva rama ejecutando \texttt{git branch testing}}
         \end{figure}
@@ -390,13 +390,13 @@ origin  git@github.com:FlyingPumba/git-intro.git (push)
 
     \begin{figure}[ht]
         \begin{center}
-            \includegraphics[height=1in]{head-to-testing.png}
+            \includegraphics[height=1in]{images/testing.png}
         \end{center}
         \caption{Si queremos cambiar de rama, podemos ejecutar \texttt{git checkout testing}}
     \end{figure}
     \begin{figure}[ht]
         \begin{center}
-            \includegraphics[height=1in]{advance-testing.png}
+            \includegraphics[height=1in]{images/testing.png}
         \end{center}
         \caption{Y los siguientes commits serán agregados a la rama ``testing''}
     \end{figure}
@@ -427,7 +427,7 @@ origin  git@github.com:FlyingPumba/git-intro.git (push)
 
 	\begin{figure}[ht]
 		\begin{center}
-			\includegraphics[height=1.5in]{basic-merging-1.png}
+			\includegraphics[height=1.5in]{images/merging-1.png}
 		\end{center}
 		\caption{Antes del merge}
 	\end{figure}
@@ -441,7 +441,7 @@ origin  git@github.com:FlyingPumba/git-intro.git (push)
 
 	\begin{figure}[ht]
 		\begin{center}
-			\includegraphics[height=1.5in]{basic-merging-2.png}
+			\includegraphics[height=1.5in]{images/merging-2.png}
 		\end{center}
 		\caption{Después del merge}
 	\end{figure}
@@ -455,7 +455,7 @@ origin  git@github.com:FlyingPumba/git-intro.git (push)
         \item \texttt{git reset}: para deshacer cambios, ya sea en el area de trabajo o en los commits.
         \item \texttt{git rm}: para borrar un archivo y pasarlo al area de preparación.
         \item \texttt{git mv}: para mover/renombrar un archivo y pasarlo al area de preparación.
-        \item \texttt{git show}: muestra información de distintos objectos de Git: commits, tags, etc. 
+        \item \texttt{git show}: muestra información de distintos objectos de Git: commits, tags, etc.
         \item \texttt{git stash}: guarda el estado del area de trabajo y lo limpia.
         \item \texttt{git rebase [branch]}: aplica todos los commits que difieren entre un branch y el que estamos parados.
         \item \texttt{git tag [etiqueta] [commit hash]}: ponerle una etiqueta a un commit.
